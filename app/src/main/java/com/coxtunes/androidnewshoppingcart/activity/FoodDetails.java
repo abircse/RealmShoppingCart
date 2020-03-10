@@ -70,6 +70,7 @@ public class FoodDetails extends AppCompatActivity {
                             Food food = realm.createObject(Food.class,foodmodel.getId());
                             food.setFoodName(foodmodel.getFoodName());
                             food.setFoodPrice(foodmodel.getFoodPrice());
+                            food.setFoodquantity(1);
                             Toast.makeText(FoodDetails.this, "Food Added to Cart", Toast.LENGTH_SHORT).show();
                         }
                     }

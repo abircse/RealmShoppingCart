@@ -2,7 +2,6 @@ package com.coxtunes.androidnewshoppingcart.model;
 
 import java.io.Serializable;
 
-import io.realm.Realm;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
@@ -13,6 +12,7 @@ public class Food extends RealmObject implements Serializable {
 
     private String foodName;
     private double foodPrice;
+    private int foodquantity;
 
     public Food() {
     }
@@ -28,6 +28,14 @@ public class Food extends RealmObject implements Serializable {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public int getFoodquantity() {
+        return foodquantity;
+    }
+
+    public void setFoodquantity(int foodquantity) {
+        this.foodquantity = foodquantity;
     }
 
     public String getFoodName() {
